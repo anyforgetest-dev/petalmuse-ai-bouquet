@@ -10,5 +10,5 @@ def find_best_bouquet_arrangement(flower_list):
     weighted_flowers = list(flower_suitability_scores[flower] * 
                    personal_suitability for flower in flower_list)
 
-    # Return the flower with the maximum value based on the combined suitability scores.
+    # Return the flower with the highest value based on the combined suitability scores.
     return max(weighted_flowers, key=flower_suitability_scores.get)
